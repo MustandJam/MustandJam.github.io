@@ -1,89 +1,110 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>测测我的MBTI理想云是哪一朵？</title>
-    <style>
-      h1, h2 {
-        color: #333;
-      }
+<head>
+ <meta charset="UTF-8">
+ <title>简历</title>
+ <style>
+  body {
+   font-family: Arial, sans-serif;
+   background-color: #f2f2f2;
+   color: #444444;
+  }
+  h1 {
+   margin-top: 50px;
+   text-align: center;
+   color: #0099cc;
+  }
+  h2 {
+   margin-top: 30px;
+   color: #006699;
+  }
+  p {
+   line-height: 1.5;
+  }
+  .section {
+   margin-top: 40px;
+   padding: 20px;
+   background-color: #ffffff;
+   border: 1px solid #d1d1d1;
+   box-shadow: 0 0 10px #d1d1d1;
+  }
+  .skills ul {
+   list-style-position: inside;
+   line-height: 2;
+  }
+  .contact {
+   margin-top: 50px;
+   background-color: #006699;
+   color: #ffffff;
+   text-align: center;
+   padding: 20px;
+   border-radius: 10px;
+  }
+  .contact p {
+   margin-bottom: 0;
+  }
+  .contact a {
+   color: #ffffff;
+   text-decoration: none;
+  }
+  body{
+     background-image:url(WechatIMG1181.jpeg);
+   }
+ </style>
 
-      form {
-        margin-bottom: 20px;
-      }
+</head>
+<body>
+<body background="d:\image\WechatIMG1181.jpeg">
+ <header>
+  <h1>个人简历</h1>
+ </header>
+ <main>
+  <section class="section">
+   <h2>个人信息</h2>
+   <p>姓名：杨楚</p >
+   <p>性别：女</p >
+   <p>年龄：20岁</p >
+   <p>联系电话：13011293801</p >
+   <p>电子邮箱：1802719158@qq.com.com</p >
+  </section>
+  <section class="section">
+   <h2>教育经历</h2>
+   <p>本科：中国传媒大学 2021/09-2025/06</p >
+   <p>专业：广告学（数字营销方向）</p >
+   <p>主修课程：广告学概论，市场营销，广告策划，社会科学研究方法</p >
+  </section>
+  <section class="section">
+   <h2>实习经历</h2>
+   <p>海唐新媒 媒介实习生 2022/06-2022/09</p >
+   <p>1. 负责媒介策略的规划和制定，提供完整性媒介计划，进行媒体优化、媒体组合开发;</p >
+   <p>2. 根据产品特性，选择适合 的媒体及合作单位，充分调动和发挥渠道资源，借助媒介推广公司良好品牌形象，提升公司知名度;</p >
+  </section>
+  <section class="section skills">
+   <h2>社团和组织经历</h2>
+   <ul>
+    <li>校学生会新媒体运营 宣传推广组 2021/09-2022/03 推送制作 公众号运营</li>
+    <li>校学生会外联部 2018/09-2021/09 与外校保持交流联系，赞助支撑</li>
+   </ul>
+  </section>
+  <section class="section">
+   <h2>获奖经历</h2>
+   <p>北京市大学生创新创业大赛市级立项 2022/05</p >
+   <p>北京市模拟联合国 荣誉提名奖项 2019/01</p >
+   <p>北京市级三好学生 2021/12</p >
+   <p>校三等奖学金 2022/12</p >
+   <p>校单项奖学金 2022/12</p >
+  </section>
+  <section class="section">
+   <h2>作品展示</h2>
+   <p>UI界面设计/IP形象设计</p >
+     <img src="WechatIMG1176.jpeg" width="800" height="480">
+     <img src="WechatIMG1177.jpeg" width="800" height="600">
 
-      #result {
-        display: none;
-        margin-top: 20px;
-      }
-
-      #result p {
-        font-size: 1.2em;
-        font-weight: bold;
-      }
-
-      #result span {
-        color: red;
-      }
-    </style>
-  </head>
-  <body>
-    <body style="background-color:lavender;">
-    <h1 style="background-color:lightskyblue;">测测我的MBTI理想云是哪一朵？</h1>
-    <form>
-      <h2 style="border-style:solid; border-width:1px;padding:20px;">问题1：接到朋友的联络说突然要办同学聚会的话我会？</h2>
-      <input type="radio" name="q1" value="1">没问题，当然要去！<br>
-      <input type="radio" name="q1" value="2">唔，那天会不会有其他安排，让我先想想。<br>
-      <input type="radio" name="q1" value="3">啊···太突然了吧，下次再说<br>
-      <h2 style="border-style:solid; border-width:1px;padding:20px;">问题2：最后去了同学聚会但聚会结束比想象的要晚时我会？</h2>
-      <input type="radio" name="q2" value="1">越玩越嗨反而觉得更好<br>
-      <input type="radio" name="q2" value="2">一边玩一边不断地看表<br>
-      <input type="radio" name="q2" value="3">慢慢准备独自离开<br>
-      <h2 style="border-style:solid; border-width:1px;padding:20px;">问题3：当与朋友诉说我的烦恼时我希望？</h2>
-      <input type="radio" name="q3" value="1">情感上的共鸣与安抚人心的话语<br>
-      <input type="radio" name="q3" value="2">针对烦恼的认真分析与建议<br>
-      <input type="radio" name="q3" value="3">现实的问题解决方案与主动的行动<br>
-      <h2 style="border-style:solid; border-width:1px;padding:20px;">问题4：第一次与恋人去海外旅游时我会？</h2>
-      <input type="radio" name="q4" value="1">主要由恋人做主，同意恋人的大多数意见<br>
-      <input type="radio" name="q4" value="2">与恋人一起制定出游计划<br>
-      <input type="radio" name="q4" value="3">自己早早地把旅行计划列好<br>
-      <input type="submit" value="提交">
-    </form>
-
-    <div id="result">
-      <h2>测试结果</h2>
-      <p>根据你的选择，你的性格类型是<span id="personality"></span></p>
-    </div>
-
-    <script>
-      const form = document.querySelector('form');
-      const result = document.querySelector('#result');
-      const personality = document.querySelector('#personality');
-
-      form.addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        const q1 = form.q1.value;
-        const q2 = form.q2.value;
-        const q3 = form.q3.value;
-        const q4 = form.q4.value;
-
-        const score = parseInt(q1) + parseInt(q2) + parseInt(q3) + parseInt(q4);
-
-        let type;
-
-        if (score < 7) {
-          type = '卷云。你的恋爱风格为喜欢自由自在的恋爱，畅所欲言喜欢惊喜，集中于当前的恋爱，希望和恋人一起体验新颖事物。';
-        } else if (score < 11) {
-          type = '层云。恋爱有时宁静有时吵闹，是一对一起体验对方好奇心的情侣对于恋人的想法和情绪很懂得产生共鸣';
-        } else {
-          type = '积雨云。你的恋爱风格为刚开始会比较被动，但渐渐地会变得主动虽然表达多少有些不足，但很会照顾恋人。';
-        }
-
-        personality.textContent = type;
-        result.style.display = 'block';
-      });
-    </script>
-  </body>
+  </section>
+ </main>
+ <footer class="contact">
+  <p>联系我：<a href=" ">13011293801</a ></p >
+  <p>发邮件给我：<a href="1802719158@qq.com">1802719158@qq.com</a ></p >
+ </footer>
+</body>
 </html>
-
