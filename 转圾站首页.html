@@ -1,0 +1,1058 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<!--[if IE 8 ]><html dir="ltr" lang="en" class="ie8"><![endif]-->
+<!--[if IE 9 ]><html dir="ltr" lang="en" class="ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html dir="ltr" lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>转圾点首页</title>
+
+	<meta name="description" content="My Store">
+	<script src="static/js/jquery-2.1.1.min.js"></script>
+	<link href="static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<script src="static/js/bootstrap.min.js"></script>
+	<link href="static/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="static/css/css2.css" rel="stylesheet">
+
+	<script src="static/js/jquery.elevateZoom.min.js"></script>
+	<script src="static/js/jquery.magnific-popup.min.js"></script>
+	<script src="static/js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="static/js/quickview.js"></script>
+	<link href="static/css/mahardhi-font.css" rel="stylesheet">
+	<link href="static/css/animate.min.css" rel="stylesheet">
+	<link href="static/css/owl.carousel.min.css" rel="stylesheet">
+	<link href="static/css/owl.theme.default.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="static/css/magnific-popup.css">
+	<script type="text/javascript" src="static/js/slick.js"></script>
+	<link href="static/css/slick.css" rel="stylesheet">
+
+	<script src="static/js/mahardhi_search.js"></script>
+	<style>
+	.block-container {
+           display: flex;
+           justify-content: space-between;
+           margin: 20px 0;
+       }
+
+       .block {
+           width: 23%; /* Adjust this value as needed */
+           border: 1px solid #ccc;
+           padding: 20px;
+           box-sizing: border-box;
+       }
+		:root {
+			--primary-color: #222222;
+			--primary-hover-color: #7fa97b;
+			--secondary-color: #ffffff;
+			--secondary-light-color: #777777;
+			--background-color: #f7f7f7;
+			--border-color: #ebebeb
+		}
+	</style>
+	<link href="static/css/stylesheet.css" rel="stylesheet">
+	<link href="static/css/swiper.min.css" type="text/css" rel="stylesheet" media="screen">
+	<link href="static/css/opencart.css" type="text/css" rel="stylesheet" media="screen">
+	<script src="static/js/swiper.jquery.js"></script>
+	<script src="static/js/tabs.js"></script>
+	<script src="static/js/jquery.cookie.js"></script>
+	<script src="static/js/common.js"></script>
+	<script src="static/js/jquery-ui.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="static/css/jquery-ui.min.css">
+	<script src="static/js/custom.js"></script>
+	<link href="index.html" rel="canonical">
+
+</head>
+
+<body class="common-home">
+
+	<nav id="top">
+		<div class="container">
+			<div class="top-inner">
+				<div class="top-left">
+					<div class="currency">
+						<div class="pull-left">
+							<form action="https://opencart.mahardhi.com/MT01/zivero/04/index.php?route=common/currency/currency"
+								method="post" enctype="multipart/form-data" id="form-currency">
+								<div class="btn-group">
+									<button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+										<span class="drop-text">Currency</span>
+										<span class="code">USD</span>
+										<i class="fa fa-angle-down"></i>
+									</button>
+									<ul class="dropdown-menu currency-dropdown curr">
+										<li>
+											<button class="currency-select btn btn-link btn-block" type="button" name="EUR">€ Euro</button>
+										</li>
+										<li>
+											<button class="currency-select btn btn-link btn-block" type="button" name="GBP">£ Pound
+												Sterling</button>
+										</li>
+										<li>
+											<button class="currency-select btn btn-link btn-block" type="button" name="USD">$ US
+												Dollar</button>
+										</li>
+									</ul>
+								</div>
+								<input type="hidden" name="code" value="">
+								<input type="hidden" name="redirect"
+									value="https://opencart.mahardhi.com/MT01/zivero/04/index.php?route=common/home">
+							</form>
+						</div>
+					</div>
+					<div class="language">
+						<div class="pull-left">
+							<form action="https://opencart.mahardhi.com/MT01/zivero/04/index.php?route=common/language/language"
+								method="post" enctype="multipart/form-data" id="form-language">
+								<div class="btn-group">
+									<button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+
+										<span class="drop-text">Language</span> <span class="code">en-gb</span>
+										<i class="fa fa-angle-down"></i>
+									</button>
+									<ul class="dropdown-menu language-dropdown lang">
+										<li>
+											<button class="btn btn-link btn-block language-select" type="button" name="en-gb"><img
+													src="static/picture/en-gb.png" alt="English" title="English"> English</button>
+										</li>
+										<li>
+											<button class="btn btn-link btn-block language-select" type="button" name="ar"><img
+													src="static/picture/ar.png" alt="Arbic" title="Arbic"> Arbic</button>
+										</li>
+									</ul>
+								</div>
+								<input type="hidden" name="code" value="">
+								<input type="hidden" name="redirect"
+									value="https://opencart.mahardhi.com/MT01/zivero/04/index.php?route=common/home">
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="top-right">
+					<!-- start account -->
+					<div id="header_ac" class="dropdown ">
+						<a href="index-accountlogin.html" title="Account" class="dropdown-toggle" data-toggle="dropdown">
+							<i class="icon-user"></i>
+							<span class="hidden-xs hidden-sm">Account</span>
+							<i class="fa fa-angle-down hidden-xs hidden-sm"></i>
+						</a>
+						<ul class="dropdown-menu dropdown-menu-right account-link-toggle">
+							<li><a href="index-accountregister.html">Register</a></li>
+							<li><a href="index-accountlogin1.html">Login</a></li>
+
+						</ul>
+					</div>
+					<!-- start wishlist-->
+					<div class="wishlist-header"><a href="index-accountlogin2.html" id="wishlist-total" title="WishList (0)"><i
+								class="icon-heart"></i><span class="wishlist-here hidden-xs hidden-sm">WishList (0)</span></a></div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+
+	<script>
+		$(document).ready(function () {
+			var headerfixed = 0;
+			if (headerfixed == 1) {
+				$(window).scroll(function () {
+					if ($(window).width() > 991) {
+						if ($(this).scrollTop() > 160) {
+							$('.header-bottom').addClass('header-fixed');
+						} else {
+							$('.header-bottom').removeClass('header-fixed');
+						}
+					}
+					else {
+						$('.header-bottom').removeClass('header-fixed');
+					}
+				});
+			}
+			else {
+				$('.header-bottom').removeClass('header-fixed');
+			}
+		});
+	</script>
+
+                                                                                             <!--导航栏-->
+																																														 <header>
+ 																																															<div class="container">
+ 																																																<div class="header-top">
+ 																																																	<div class="header-left col-sm-3">
+ 																																																			<!-- start logo -->
+ 																																															        <div id="logo">
+ 																																																												<a href="转圾站首页.html"><img src="static/pic/有字的logo.png" title="转圾点" alt="转圾点" class="img-responsive"></a>
+ 																																																										</div>
+ 																																																	</div>
+ 																																															<div class="header-bottom col-sm-9" style="background:#7fa97b;">
+ 																																																<div class="container">
+ 																																																	<!-- <div class="header-bottom-inner row"> -->
+ 																																																		<!-- <div class="top-menu-list col-md-3 hidden-sm hidden-xs">
+ 																																																				<div class="menu-list">
+ 																																																					<div class="box-categories"><span>转圾点</span></div>
+ 																																																				</div>
+ 																																																		</div> -->
+ 																																																		<div class="header-bottom-right col-md-9">
+ 																																																				<div class="header-inner " >
+ 																																																					<!-- start menu -->
+ 																																																					<nav id="menu" class="navbar navbar_menu">
+ 																																														<div class="navbar-header">
+ 																																															<button type="button" class="btn btn-navbar navbar-toggle" id="btnMenuBar"><span class="addcart-icon"></span></button>
+ 																																														</div>
+ 																																														<div id="topCategoryList" class="main-menu menu-navbar clearfix" data-more="More">
+ 																																															<div class="menu-close hidden-lg hidden-md"><span id="category" class="">Menu</span><i class="icon-close"></i></div>
+ 																																															<ul class="nav navbar-nav">
+ 																																																<li class="menulist home"><a href="转圾站首页.html">引言</a></li>
+ 																																																<li class="menulist"><a href="1fl.html">垃圾分类科普</a></li>
+ 																																																<li class="menulist"><a href="德国.html">优秀案例</a></li>
+ 																																																<li class="menulist"><a href="家庭与社区.html">我们在行动</a></li>
+ 																																															</ul>
+ 																																														</div>
+ 																																													</nav>
+ 																																																	      </div>
+ 																																																	  </div>
+ 																																																	</div>
+ 																																																</div>
+ 																																															</div>
+ 																																														</div>
+ 																																														</div>
+ 																																														</header>
+
+ 																																													<script>
+ 																																													  $(document).ready(function(){
+ 																																													    var headerfixed = 0;
+ 																																													    if (headerfixed == 1) {
+ 																																													      $(window).scroll(function () {
+ 																																													        if ($(window).width() > 991) {
+ 																																													          if ($(this).scrollTop() > 160) {
+ 																																													            $('.header-bottom').addClass('header-fixed');
+ 																																													              } else {
+ 																																													            $('.header-bottom').removeClass('header-fixed');
+ 																																													          }
+ 																																													        }
+ 																																													        else{
+ 																																													          $('.header-bottom').removeClass('header-fixed');
+ 																																													        }
+ 																																													      });
+ 																																													    }
+ 																																													    else{
+ 																																													      $('.header-bottom').removeClass('header-fixed');
+ 																																													    }
+ 																																													  });
+ 																																													</script>
+
+	<div id="common-home">
+		<div class="slideshow">
+			<div class="swiper-viewport">
+				<div id="slideshow0" class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide text-center Main-banner1">
+							<a href="index.html#"><img src="static/image/ͼƬ1.png" alt="Main-banner1" class="img-responsive"></a>
+						</div>
+						<div class="swiper-slide text-center Main-banner2">
+							<a href="index.html#"><img src="static/image/ͼƬ2.png" alt="Main-banner2" class="img-responsive"></a>
+						</div>
+						<div class="swiper-slide text-center Main-banner2">
+							<a href="index.html#"><img src="static/image/ͼƬ3.png" alt="Main-banner2" class="img-responsive"></a>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-pagination slideshow0"></div>
+				<div class="swiper-pager">
+					<div class="swiper-button-prev"><i class="fa fa-angle-left"></i></div>
+					<div class="swiper-button-next"><i class="fa fa-angle-right"></i></div>
+				</div>
+			</div>
+		</div>
+		<script>
+			$('#slideshow0').swiper({
+				mode: 'horizontal',
+				slidesPerView: 1,
+				pagination: '.slideshow0',
+				paginationClickable: true,
+				nextButton: '.swiper-button-next',
+				prevButton: '.swiper-button-prev',
+				spaceBetween: 0,
+				autoplay: 4000,
+				autoplayDisableOnInteraction: true,
+				loop: true
+			});</script>
+		<!--PRIAMARY column 1-->
+		<div class="testimonial-block mt-60">
+			<div class="testimonial-container box-module container">
+				<div class="page-title">
+					<h3>全球垃圾污染现状及垃圾分类的迫切性</h3>
+				</div>
+				<div class="owl-container">
+					<div class="block-content">
+						<div class="slideTestimonial owl-carousel owl-theme">
+							<div class="row-items">
+								<div class="testimonial-text"><i
+										class="icon-quote1"></i>进行垃圾分类处理是刻不容缓的事情，在全球范围内来看，垃圾已经通过自然界的生态循环遍布到世界的每一个角落，从南极地区到北极地区，从世界最深的马里亚纳海沟到世界屋脊珠穆朗玛峰，各种垃圾已经占领了这些原本的难以到达的地区，
+									可以说世界上已经没有一个真正的净区了。在这场垃圾围城的大作战里，没有人可以置身事外。
+
+									<i class="icon-rightquote1"></i>
+								</div>
+
+
+							</div>
+
+							<div class="row-items">
+								<div class="testimonial-text"><i
+										class="icon-quote1"></i>对人类而言，“垃圾围城”所带来的是污染地表、地下水和土壤，影响大气环境，危害居民健康，还会影响到城市经济甚至很多你想不到的其潜在危害相当严重，处理不当还会造成二次污染。因此垃圾分类工作迫在眉睫，刻不容缓。
+									<i class="icon-rightquote1"></i>
+								</div>
+
+
+
+							</div>
+
+							<div class="row-items">
+								<div class="testimonial-text"><i
+										class="icon-quote1"></i>进行垃圾分类处理是刻不容缓的事情，在全球范围内来看，垃圾已经通过自然界的生态循环遍布到世界的每一个角落，从南极地区到北极地区，从世界最深的马里亚纳海沟到世界屋脊珠穆朗玛峰，各种垃圾已经占领了这些原本的难以到达的地区，
+									可以说世界上已经没有一个真正的净区了。在这场垃圾围城的大作战里，没有人可以置身事外。
+
+									<i class="icon-rightquote1"></i>
+								</div>
+
+
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="product-tab-block mt-60 box">
+			<div class="container">
+				<div class="main-tab">
+					<div class="product-tabs box-content clearfix">
+						<div class="page-title toggled">
+
+
+
+
+
+
+							<script type="text/javascript">
+								$('#tabs a').tabs();
+
+								// set slider
+								const direction = $('html').attr('dir');
+								$('.product-tab-carousel').each(function () {
+									if ($(this).closest('#column-left').length == 0 && $(this).closest('#column-right').length == 0) {
+										$(this).addClass('owl-carousel owl-theme');
+										const items = $(this).data('items') || 4;
+										const sliderOptions = {
+											loop: false,
+											nav: true,
+											navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+											dots: false,
+											items: items,
+											responsiveRefreshRate: 200,
+											responsive: {
+												0: { items: 1 },
+												376: { items: ((items - 2) > 1) ? (items - 2) : 1 },
+												681: { items: ((items - 1) > 1) ? (items - 1) : 1 },
+												1200: { items: items }
+											}
+										};
+										if (direction == 'rtl') sliderOptions['rtl'] = true;
+										$(this).owlCarousel(sliderOptions);
+									}
+								});
+							</script>
+							<div class="banner-outer container-outer html1 mt-30 clearfix">
+								<div class="container">
+									<div class="row">
+										<div class="html1-inner">
+											<div class="col-xs-6">
+												<div class="banner1 banners">
+													<div class="inner1"> <a href="#"><img src="static/image/WechatIMG1286.jpeg" alt=""
+																class="img-responsive"></a> </div>
+													<div class="inner2">
+														<div class="promo-text-box"> </div>
+													</div>
+												</div>
+											</div>
+											<div class="col-xs-6">
+												<div class="banner2 banners">
+													<div class="inner1"> <a href="#"><img src="static/image/WechatIMG1284.jpeg" alt=""
+																class="img-responsive"></a> </div>
+													<div class="inner2">
+														<div class="promo-text-box"> </div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--PRIMARY column 3-->
+
+							<div class="category-featured box">
+								<div class="container box">
+									<div class="category-box" style="margin-top: 5rem;">
+										<div class="category-feature-list">
+											<div id="category-carousel" class="box-category  category-carousel  clearfix" data-items="4">
+
+												<div class="category-layout col-xs-12">
+													<div class="category-thumb clearfix">
+														<div class="images-hover image">
+															<a href="index-productcategory_25.html">
+																<img src="static/image/ͼƬ4.png" title="Reduce pollution"
+																	class="img-responsive img-circle">
+															</a>
+														</div>
+														<div class="caption">
+															<div class="cat-title">
+																<h4>
+																	<a href="index-productcategory_25.html">Reduce Pollution</a>
+																	<br>
+																	<font size=3 color='grey'>
+																		垃圾中的有害物质，如化学物质和重金属，如果不正确处理，可能会渗入土壤和水源，污染环境。通过正确分类和处理垃圾，可以减少这些污染物的释放，保护土壤和水体的健康。
+																	</font></br>
+																</h4>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="category-layout col-xs-12">
+													<div class="category-thumb clearfix">
+														<div class="images-hover image">
+															<a href="index-productcategory_17.html">
+																<img src="static/image/ͼƬ5.png" alt="Matcha Green Tea" title="Save Resources"
+																	class="img-responsive img-circle">
+															</a>
+														</div>
+														<div class="caption">
+															<div class="cat-title">
+																<h4>
+																	<a href="index-productcategory_17.html">Save Resources</a>
+																	<br>
+																	<font size=3 color='grey'>
+																		垃圾中的许多材料可以被回收再利用。通过正确分类垃圾，我们可以将废纸、塑料、玻璃等材料送往回收站，再加工生产新的产品，从而节约原始材料的使用。这有助于减少对自然资源的开采和能源消耗
+																	</font></br>
+																</h4>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="category-layout col-xs-12">
+													<div class="category-thumb clearfix">
+														<div class="images-hover image">
+															<a href="index-productcategory_43.html">
+																<img src="static/image/ͼƬ6.png" alt="Gunpowder Green Tea"
+																	title="Reducing Greenhouse Gas Emissions" class="img-responsive img-circle">
+															</a>
+														</div>
+														<div class="caption">
+															<div class="cat-title">
+																<h4>
+																	<a href="index-productcategory_43.html">Reducing Greenhouse Gas Emissions</a>
+																	<br>
+																	<font size=3 color='grey'>
+																		垃圾分类和处理过程中的能源消耗往往较少。相比之下，通过垃圾填埋和焚烧产生的温室气体排放也比垃圾分类和回收过程中的排放要多。正确分类和处理垃圾可以降低温室气体的排放量，有利于应对气候变化。
+																	</font></br>
+
+																</h4>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="category-layout col-xs-12">
+													<div class="category-thumb clearfix">
+														<div class="images-hover image">
+															<a href="index-productcategory_33.html">
+																<img src="static/image/ͼƬ7.png" alt="Organic Green Tea"
+																	title="Promote Sustainable Development" class="img-responsive img-circle">
+															</a>
+														</div>
+														<div class="caption">
+															<div class="cat-title">
+																<h4>
+																	<a href="index-productcategory_33.html">Promote Sustainable Development</a>
+																	<br>
+																	<font size=3 color='grey'>
+																		正确分类和处理垃圾是推动可持续发展的重要举措。通过垃圾分类和回收，可以实现循环经济的理念，减少废弃物的产生，提高资源的利用率，降低对环境的压力。这有助于实现经济的可持续发展和环境的可持续保护。
+																	</font></br>
+																</h4>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+
+							<script>
+								// set slider
+								const dirCategory = $('html').attr('dir');
+
+								$('.category-carousel').each(function () {
+									if ($(this).closest('#column-left').length == 0 && $(this).closest('#column-right').length == 0) {
+										$(this).addClass('owl-carousel owl-theme');
+										const items = $(this).data('items') || 4;
+										const sliderOptions = {
+											loop: false,
+											rewind: false,
+											nav: true,
+											navText: ['<i class="fa fa-angle-left">', '<i class="fa fa-angle-right">'],
+											dots: false,
+											items: items,
+											autoplay: false,
+											autoplayTimeout: 4000,
+											responsiveRefreshRate: 200,
+											responsive: {
+												0: { items: 2 },
+												376: { items: 3 },
+												768: { items: items }
+											}
+										};
+										if (dirCategory == 'rtl') sliderOptions['rtl'] = true;
+										$(this).owlCarousel(sliderOptions);
+									}
+								});
+							</script>
+							<script>
+								const direct = $('html').attr('dir');
+								const items = 3;
+								$(".slideTestimonial").each(function () {
+									const sliderOptions = {
+										loop: false,
+										nav: true,
+										navText: ['<i class="fa fa-angle-left"></i>', '<i class="fa fa-angle-right"></i>'],
+										dots: false,
+										items: items,
+										autoplay: true,
+										autoplayTimeout: 3000,
+										responsiveRefreshRate: 200,
+										responsive: {
+											0: { items: 1 },
+											1201: { items: 1 }
+										}
+									};
+
+									if (direct == 'rtl') sliderOptions['rtl'] = true;
+									$(this).owlCarousel(sliderOptions);
+								});
+							</script>
+
+							                                               <!--知识整理首页-->
+							<div class="container">
+								<div class="page-title section">
+																		<h1 style="padding-top:30px; text-align: center ">垃圾分类知多少？</h1>
+																	</div>
+																	<!--以下是科普分类部分-->
+															     <div class="page-title toggled"><h3>科普分类</h3><h4>~猜一猜以下是什么类型垃圾~</h4></div>
+															   <div class="block-container">
+															           <div class="block">
+															             <div class="product-thumb transition clearfix">
+															               <div class="image">
+															                     <img src="static/pic/烟头.jpg" alt="Cloves" title="Cloves" class="img-responsive">
+															                     <img class="img-responsive hover-img" src="static/pic/gan.jpg" title="Cloves">
+															               </div>
+															               <div class="thumb-description clearfix">
+															                 <div class="caption">
+															                   <div class="price-rating">
+															                                               <div class="rating">
+															                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> 																													 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> 																													 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> 																													 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> 																													 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> 																											</div>
+															                                           </div>
+															                   <h4 class="product-title"><a>烟头</a></h4>
+
+															                                           <p class="price">
+															                                                   <span class="price-new">???</span>
+
+															                     </p>
+															                                         <button type="button" class="addcart" title="Add to Cart" ><a href="1fl.html" > 查看更多</button>
+															                 </div>
+															               </div>
+															             </div>
+															           </div>
+
+															           <div class="block">
+															             <div class="product-thumb transition clearfix">
+															               <div class="image">
+															                     <img src="static/pic/晾衣架.jpg"  title="Black Pepper" class="img-responsive">
+															                     <img class="img-responsive hover-img" src="static/pic/kehuishou.jpg" title="Black Pepper">
+
+
+
+															               </div>
+															               <div class="thumb-description clearfix">
+															                 <div class="caption">
+															                   <div class="price-rating">
+															                                               <div class="rating">
+															                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> 																													 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> 																													 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> 																													 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> 																													 <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> 																											</div>
+															                                           </div>
+															                   <h4 class="product-title"> <a>晾衣架</a></h4>
+
+															                                           <p class="price">
+															                                                   <span class="price-new">???</span>
+
+															                     </p>
+															                                       <button type="button" class="addcart" title="Add to Cart" ><a href="1fl.html" > 查看更多</button>
+															                 </div>
+															               </div>
+															             </div>
+															           </div>
+
+															           <div class="block">
+															             <div class="product-thumb transition clearfix">
+															               <div class="image">
+															                     <img src="static/pic/鱼骨头.jpg" alt="Nutmeg" title="Nutmeg" class="img-responsive">
+															                     <img class="img-responsive hover-img" src="static/pic/shi.jpg" title="Nutmeg" >
+
+															               </div>
+															               <div class="thumb-description clearfix">
+															                 <div class="caption">
+															                   <div class="price-rating">
+															                                               <div class="rating">
+															                                                        <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> 																													 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> 																													 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> 																													 <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> 																													 <span class="fa fa-stack"><i class="fa fa-star-o fa-stack-2x"></i></span> 																											</div>
+															                                           </div>
+															                   <h4 class="product-title"><a>鱼骨头</a></h4>
+
+															                                           <p class="price">
+															                                                   <span class="price-new">???</span>
+															                     </p>
+															                                 <button type="button" class="addcart" title="Add to Cart" ><a href="1fl.html" > 查看更多</button>
+															                 </div>
+															               </div>
+															             </div>
+															           </div>
+
+															           <div class="block">
+															             <div class="product-thumb transition clearfix">
+															             <div class="image">
+															             <img src="static/pic/药丸.jpg" class="img-responsive">
+															             <img class="img-responsive hover-img" src="static/pic/youhai.jpg">
+															             </div>
+															             <div class="thumb-description clearfix">
+															             <div class="caption">
+															             <div class="price-rating">
+															             <div class="rating">
+															             <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> 																													 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> 																													 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> 																													 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> 																													 <span class="fa fa-stack"><i class="fa fa-star fa-stack-2x"></i><i class="fa fa-star-o fa-stack-2x"></i></span> 																											</div>
+															             </div>
+															             <h4 class="product-title"><a>药丸</a></h4>
+															             <p class="price">
+															             <span class="price-new">???</span>
+
+															             </p>
+															             <button type="button" class="addcart" title="Add to Cart" ><a href="1fl.html" > 查看更多</button></div>
+															             </div>
+															             </div>
+															           </div>
+															 </div>
+                                                                     <!--优秀案例首页-->
+<h1 style="padding-top:30px; text-align: center">哪些地区做的好？</h1>
+<h3 style="text-align: center;">点击查看</h3>
+
+							<div class="box carousel brand mt-30">
+								<div class="container">
+									<div class="">
+
+										<div class="swiper-viewport">
+											<div id="carousel0" class="swiper-container">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide col-sm-12">
+														<div class="text-center">
+															<a href="德国.html" alt="Starbucks" class="img-responsive m-auto">
+																<li><h2 href="德国.html">德国</a></li>
+															</h2>
+														</div>
+													</div>
+													<div class="swiper-slide col-sm-12">
+														<div class="text-center">
+															<a href="中国.html" alt="Starbucks" class="img-responsive m-auto">
+																<li><h2 href="中国.html">中国</a></li>
+															</h2>
+														</div>
+													</div>
+													<div class="swiper-slide col-sm-12">
+														<div class="text-center">
+															<a href="日本.html" alt="Starbucks" class="img-responsive m-auto">
+
+																<li><h2 href="日本.html">日本</a></li>
+
+															</h2>
+														</div>
+													</div>
+													<div class="swiper-slide col-sm-12">
+														<div class="text-center">
+															<a href="美国.html" alt="Starbucks" class="img-responsive m-auto">
+																<li><h2 href="美国.html">美国</a></li>
+															</h2>
+														</div>
+													</div>
+													<div class="swiper-slide col-sm-12">
+														<div class="text-center">
+															<a href="比利时.html" alt="Starbucks" class="img-responsive m-auto">
+																<li><h2 href="比利时.html">比利时</a></li>
+															</h2>
+														</div>
+													</div>
+													<div class="swiper-slide col-sm-12">
+														<div class="text-center">
+															<a href="新加坡.html" alt="Starbucks" class="img-responsive m-auto">
+																<li><h2 href="新加坡.html">新加坡</a></li>
+															</h2>
+														</div>
+													</div>
+
+
+												</div>
+											</div>
+											<div class="swiper-pagination carousel0"></div>
+											<div class="swiper-pager">
+												<div class="swiper-button-prev"><i class="fa fa-angle-left"></i></div>
+												<div class="swiper-button-next"><i class="fa fa-angle-right"></i></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<script>
+								$('#carousel0').swiper({
+									mode: 'horizontal',
+									slidesPerView: 6,
+									paginationClickable: false,
+									nextButton: '.swiper-button-next',
+									prevButton: '.swiper-button-prev',
+									loop: true,
+									autoplay: 4000,
+									autoplayDisableOnInteraction: true,
+									breakpoints: {
+										1750: {
+											slidesPerView: 7,
+											spaceBetween: 0
+										},
+										1440: {
+											slidesPerView: 6,
+											spaceBetween: 0
+										},
+										1199: {
+											slidesPerView: 5,
+											spaceBetween: 0
+										},
+										767: {
+											slidesPerView: 4,
+											spaceBetween: 0
+										},
+										600: {
+											slidesPerView: 3,
+											spaceBetween: 0
+										},
+										480: {
+											slidesPerView: 2,
+											spaceBetween: 0
+										},
+										300: {
+											slidesPerView: 1,
+											spaceBetween: 0
+										}
+									}
+								});
+							</script>
+
+							<div class="container">
+								<div class="row">
+
+									<div id="content" class="col-sm-12">
+
+
+										<script>
+											function subscribe_popup () {
+												$.ajax({
+													type: 'post',
+													url: 'index.php?route=extension/module/mahardhi_newsletter/subscribepopup',
+													dataType: 'html',
+													data: $("#frmnewsletterpopup").serialize(),
+													success: function (html) {
+														try {
+															eval(html);
+														}
+														catch (e) {
+														}
+													}
+												});
+											}
+										</script>
+										<script>
+											// check for validation
+											$(document).ready(function () {
+												$('#newsletter_usr_popup_email').keypress(function (e) {
+													if (e.which == 13) {
+														e.preventDefault();
+														subscribe_popup();
+													}
+												});
+
+												//transition effect
+												if ($.cookie("showpopup") != 1) {
+													$('#newsletter-popup').modal('show');
+												}
+												$('#popup_dont_show_again').on('change', function () {
+													if ($.cookie("showpopup") != 1) {
+														$.cookie("showpopup", '1')
+													} else {
+														$.cookie("showpopup", '0')
+													}
+												});
+											});
+										</script>
+									</div>
+
+								</div>
+							</div>
+						</div>
+                                                                          <!--我们在行动首页-->
+<div class="page-title section">
+										<h1 style="padding-top:30px; text-align: center ">我们在行动</h1>
+									</div>
+<div class="row">
+	<div class="container">
+		<div class="blog-layout product-list blog-category col-sm-4">
+									<div class="blog-block clearfix">
+										<div class="blog-info">
+											<div class="image image-blog">
+													<a class="blog-img">
+														<img src="static/pic/家庭与社区.png" alt="Nam nec rhoncus est" title="Nam nec rhoncus est" class="img-responsive">
+													</a>
+													<div class="zoom-post">
+
+									</div>
+											</div>
+										</div>
+										<div class="caption-blog">
+								<div class="caption blog-description">
+
+									<h4 class="blog-title" style="font-size:150%;"><a href="index-blogarticle_2.html">家庭与社区</a></h4>
+									<div class="blog-text">
+										<span>家庭与社区作为垃圾分类的小单元，负责日常垃圾的初步分类，将厨余垃圾与其他垃圾分开，有助于资源的回收利用。</span>
+									</div>
+									<div class="blog-group clearfix">
+									<a href="家庭与社区.html" class="btn btn-primary">我想了解</a></div>
+									</div>
+
+															</div>
+										</div>
+									</div>
+
+									<div class="blog-layout product-list blog-category col-sm-4">
+																<div class="blog-block clearfix">
+
+																	<div class="caption-blog">
+															<div class="caption blog-description">
+
+																<h4 class="blog-title" style="font-size:150%;"><a href="index-blogarticle_2.html">政府与企业</a></h4>
+																<div class="blog-text">
+																	<span>在政府的监督与法规指导的作用下，企业应遵守垃圾分类法规，按照规定将不同类型的垃圾进行分类，并正确投放。</span>
+																</div>
+																<div class="blog-group clearfix">
+																<a href="政府与企业.html" class="btn btn-primary">我想了解</a></div>
+																</div>
+
+																						</div>
+																						<div class="blog-info">
+																							<div class="image image-blog">
+																									<a class="blog-img">
+																										<img src="static/pic/政府与企业.png" alt="Nam nec rhoncus est" title="Nam nec rhoncus est" class="img-responsive">
+																									</a>
+																									<div class="zoom-post">
+
+																					</div>
+																							</div>
+																						</div>
+																	</div>
+																</div>
+									<div class="blog-layout product-list blog-category col-sm-4">
+																<div class="blog-block clearfix">
+																	<div class="blog-info">
+																		<div class="image image-blog">
+																				<a class="blog-img">
+																					<img src="static/pic/环保组织.png" alt="Nam nec rhoncus est" title="Nam nec rhoncus est" class="img-responsive">
+																				</a>
+																				<div class="zoom-post">
+
+																</div>
+																		</div>
+																	</div>
+																	<div class="caption-blog">
+															<div class="caption blog-description">
+
+																<h4 class="blog-title" style="font-size:150%;"><a href="index-blogarticle_2.html">环保组织</a></h4>
+																<div class="blog-text">
+																	<span>环保组织推广垃圾分类标准，监督和检查企业和家庭的垃圾分类情况，促进可持续发展，保护生态环境。</span>
+																</div>
+																<div class="blog-group clearfix">
+																<a href="环保组织.html" class="btn btn-primary">我想了解</a></div>
+																</div>
+
+																						</div>
+																	</div>
+																</div>
+							</div>
+
+</div>
+				</div>
+				                                         <!--页脚-->
+						<footer class="mt-60">
+							<div class="container">
+								<div class="row">
+									<div class="footer-top clearfix">
+										<div class="col-sm-4">
+											<div class="position-footer-left">
+												<div class="box news">
+													<div class="newsletterblock">
+														<div class="newsletter-form block-content">
+															<h5 class="title-text">Something you can do 1</h5>
+															<div class="news-dec">
+																<div class="news-description">用你的双手为垃圾处理工作出一份力
+																	</div>
+																<!-- newsletter box -->
+																<form name="frmnewsletter" id="frmnewsletter" onsubmit="subscribe();return false"
+																	method="post">
+																	<div class="subscribe-form">
+																		<input type="email" name="newsletter_usr_email" id="newsletter_usr_email"
+																			placeholder="Your Email Address..."
+																			class="form-control input-lg inputNew txtemail" required="">
+																		<button type="submit" class="subscribe-btn"><span>捐赠</span></button>
+																	</div>
+																	<!-- newsletter notofication -->
+																	<div class="newsletter-message"></div>
+																	<!-- newsletter notofication -->
+																</form>
+																<!-- newsletter box -->
+															</div>
+														</div>
+													</div>
+												</div>
+												<script>
+													//add
+													function subscribe () {
+														$.ajax({
+															type: 'post',
+															url: 'index.php?route=extension/module/mahardhi_newsletter/subscribe',
+															dataType: 'html',
+															data: $("#frmnewsletter").serialize(),
+															success: function (html) {
+																try {
+																	eval(html);
+																}
+																catch (e) {
+																}
+															}
+														});
+													}
+
+													// check for validation
+													$(document).ready(function () {
+														$('#newsletter_usr_email').keypress(function (e) {
+															if (e.which == 13) {
+																e.preventDefault();
+																subscribe();
+															}
+														});
+													});
+												</script>
+
+
+											</div>
+										</div>
+
+										<div class="col-sm-4">
+											<div class="footer-content">
+												<h4>Something you can do 2</h4>
+												<div class="news-description">大的改变从小的习惯开始
+													</div>
+													<div class="news-description">一些力所能及的尝试：
+														</div>
+
+												<div class="subscribe-form">
+
+													<div class="news-description">just buy this
+														</div>
+
+<p ></p>
+<p></p>
+												</div>
+												<ul class="list-unstyled">
+          <a   href="https://search.jd.com/search?keyword=%E5%8F%AF%E9%99%8D%E8%A7%A3%E5%9E%83%E5%9C%BE%E8%A2%8B&suggest=1.def.0.SAK7%7CMIXTAG_SAK7R%2CSAK7_M_AM_L5399%2CSAK7_S_AM_R%2CSAK7_D_HSP_R%2CSAK7_SC_PD_R%2CSAK7_SM_PB_R%2CSAK7_SM_PRK_R%2CSAK7_SM_PRC_R%2CSAK7_SM_PRR_R%2CSAK7_SS_PM_R%7C&wq=%E5%8F%AF%E9%99%8D%E8%A7%A3%E5%9E%83%E5%9C%BE%E8%A2%8B&ev=1168_132582%5E&pvid=d59d46603e51498babac1c64f8200476&page=9&s=241&click=0" type="submit" class="subscribe-btn"><span>环保可降解垃圾袋</span></a>
+													<li><a href="index-informationinformation_6.html"></a></li>
+
+
+												</ul>
+											</div>
+										</div>
+
+										<div class="col-sm-4">
+											<div class="position-footer-right">
+												<h5 class="toggled title">contact info</h5>
+												<ul class="list-unstyled">
+													<li>
+														<div class="site">
+															<div class="contact_title">address:</div>
+															<div class="contact_site">定福庄东街一号中国传媒大学</div>
+														</div>
+													</li>
+													<li>
+														<div class="phone">
+															<div class="contact_title">phone:</div>
+															<div class="contact_site">+12345678</div>
+														</div>
+													</li>
+
+													<li>
+														<div class="email">
+															<div class="contact_title">email:</div>
+															<div class="contact_site"> <a href="mailto:info@Yourstore.com">转圾站@Yourlaji.com</a>
+															</div>
+														</div>
+													</li>
+													<li>
+
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="footer_bottom clearfix">
+								<div class="container">
+									<div class="row">
+										<div class="footer-right col-md-6">
+											<div class="position-footer-bottom">
+												<div class="social-media">
+													<h4 class="social-title">Follow us:</h4><a href="#"><i
+															class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a
+														href="#"><i class="fa fa-youtube-play"></i></a><a href="#"><i
+															class="fa fa-google-plus"></i></a><a href="#"> <i
+															class="fa fa-pinterest-p"></i></a>
+												</div>
+											</div>
+										</div>
+										<div class="footer-left col-md-6">
+											<p class="powered">Powered By <a href="javascript:;">转圾人小组</a> 转圾站 &copy; 2023</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</footer>
+						<!-- top scroll -->
+						<a href="index.html#" class="scrollToTop back-to-top" data-toggle="tooltip" title="Top"><i
+								class="fa fa-angle-up"></i></a>
+</body>
+
+</html>
